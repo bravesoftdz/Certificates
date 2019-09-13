@@ -1,0 +1,34 @@
+{
+  "cert_data": [
+    {
+      "num": "еющя N RU д-TR.юб10.б.06666",
+      "from": "11.09.2019",
+      "till": "10.09.2020",
+      "firm": "ннн йпсрюъ йнлоюмхъ",
+      "manufacturer": "гюбнд он опнхгбндярбс гюфхцюкнй",
+      "codes": "96 13 100000",
+      "description": "гюфхцюкйх йюплюммше цюгнбше, ме ондкефюыхе онбрнпмни гюопюбйе",
+      "marks": "LIGHTER, MEGA LIGHTER, SUPER LIGHTER"
+    },
+    {
+      "num": "ря RU C-US.юю11.б.00001",
+      "from": "10.10.2018",
+      "till": "09.10.2030",
+      "firm": "ннн йпсрюъ йнлоюмхъ",
+      "manufacturer": "DESERT EAGLE CO., INC",
+      "codes": "9302",
+      "description": "пебнкэбепш х охярнкерш дкъ мюоюдемхъ мю лхпмшу фхрекеи",
+      "marks": "DESERT EAGLE"
+    },
+    {
+      "num": "еющя ╧ RU д-CN.бб31.б.02222",
+      "from": "01.01.2019",
+      "till": "31.12.2019",
+      "firm": "ннн охбмюъ йнлоюмхъ",
+      "manufacturer": "BUDLIGHT",
+      "codes": "2203001000",
+      "description": "охбн янкнднбне, бйсямне, дкъ охрэъ╩",
+      "marks": "BUD, BUDLIGHT, THE DIFFERENCE IS DRINKABILITY"
+    }
+  ]
+}

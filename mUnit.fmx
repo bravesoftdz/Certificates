@@ -1,0 +1,300 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = #1041#1072#1079#1072' '#1087#1086' '#1085#1077#1090#1072#1088#1080#1092#1082#1077
+  ClientHeight = 800
+  ClientWidth = 1064
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object StatusBar1: TStatusBar
+    Align = MostBottom
+    Margins.Left = 4.000000000000000000
+    Margins.Right = 4.000000000000000000
+    Margins.Bottom = 2.000000000000000000
+    Position.X = 4.000000000000000000
+    Position.Y = 776.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 1056.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object LabelStatus: TLabel
+      Align = Client
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Size.Width = 1052.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      Text = #1058#1077#1082#1091#1097#1077#1077' '#1088#1072#1089#1087#1086#1083#1086#1078#1077#1085#1080#1077' '#1092#1072#1081#1083#1072':'
+      TabOrder = 0
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 256
+    Top = 8
+    object MenuItem1_File: TMenuItem
+      Text = #1060#1072#1081#1083
+      object MenuItem4_LoadFromLocalFile: TMenuItem
+        Locked = True
+        Text = #1047#1072#1075#1088#1091#1079#1080#1090#1100' '#1080#1079' '#1083#1086#1082#1072#1083#1100#1085#1086#1075#1086' '#1092#1072#1081#1083#1072
+        OnClick = MenuItem4_LoadFromLocalFileClick
+      end
+      object MenuItem5_LoadFromRemoteServer: TMenuItem
+        Locked = True
+        Text = #1047#1072#1075#1088#1091#1079#1080#1090#1100' '#1089' '#1091#1076#1072#1083#1105#1085#1085#1086#1075#1086' '#1089#1077#1088#1074#1077#1088#1072
+        OnClick = MenuItem5_LoadFromRemoteServerClick
+      end
+    end
+    object MenuItem3_About: TMenuItem
+      Text = '?'
+      OnClick = MenuItem3_AboutClick
+    end
+  end
+  object MainTabControl: TTabControl
+    Align = Client
+    Margins.Left = 4.000000000000000000
+    Margins.Top = 2.000000000000000000
+    Margins.Right = 4.000000000000000000
+    Margins.Bottom = 2.000000000000000000
+    Size.Width = 1056.000000000000000000
+    Size.Height = 772.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'tabcontrolstyle'
+    TabHeight = 22.000000000000000000
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = PlatformDefault
+    Sizes = (
+      1056s
+      750s
+      1056s
+      750s)
+    object CertificatesList: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 136.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #1057#1087#1080#1089#1086#1082' '#1076#1086#1082#1091#1084#1077#1085#1090#1086#1074
+      ExplicitSize.cx = 136.000000000000000000
+      ExplicitSize.cy = 20.000000000000000000
+      object MainListView: TListView
+        ItemAppearanceClassName = 'TCustomizeItemObjects'
+        ItemEditAppearanceClassName = 'TCustomizeItemObjects'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        OnUpdatingObjects = MainListViewUpdatingObjects
+        AlternatingColors = True
+        Align = Client
+        Cursor = crHandPoint
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Size.Width = 1048.000000000000000000
+        Size.Height = 720.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ItemAppearanceObjects.ItemObjects.Text.WordWrap = True
+        OnDblClick = DetailedInfoClick
+        SearchVisible = True
+      end
+      object Panel2: TPanel
+        Align = MostBottom
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 726.000000000000000000
+        Size.Width = 1052.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object SpeedButtonLoadData: TSpeedButton
+          Align = Client
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 4.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Size.Width = 1046.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          Text = #1047#1072#1075#1088#1091#1079#1080#1090#1100' '#1076#1072#1085#1085#1099#1077'.'
+          OnClick = SpeedButtonLoadDataClick
+        end
+      end
+    end
+    object DetailedInfo: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Enabled = False
+      IsSelected = False
+      Size.Width = 165.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #1055#1086#1076#1088#1086#1073#1085#1072#1103' '#1080#1085#1092#1086#1088#1084#1072#1094#1080#1103
+      OnClick = DetailedInfoClick
+      ExplicitSize.cx = 165.000000000000000000
+      ExplicitSize.cy = 20.000000000000000000
+      object DetailedSelectingButtonsGroup: TGroupBox
+        Align = MostLeft
+        StyledSettings = [Family, Size, FontColor, Other]
+        Padding.Top = 20.000000000000000000
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 4.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 746.000000000000000000
+        Size.PlatformDefault = False
+        Text = #1056#1072#1079#1076#1077#1083
+        TabOrder = 0
+        object SpeedButtonDescription: TSpeedButton
+          Align = MostTop
+          StyledSettings = [Family, Size, Style]
+          Margins.Bottom = 2.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = #1055#1088#1086#1076#1091#1082#1094#1080#1103
+          TextSettings.FontColor = claBlue
+          OnClick = SpeedButtonDescriptionClick
+        end
+        object SpeedButtonMarks: TSpeedButton
+          Align = Top
+          StyledSettings = [Family, Size, Style]
+          Margins.Bottom = 2.000000000000000000
+          Position.Y = 44.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = #1052#1072#1088#1082#1080#1088#1086#1074#1082#1072
+          OnClick = SpeedButtonMarksClick
+        end
+        object SpeedButtonManufacturer: TSpeedButton
+          Align = Top
+          StyledSettings = [Family, Size, Style]
+          Margins.Bottom = 2.000000000000000000
+          Position.Y = 68.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = #1048#1079#1075#1086#1090#1086#1074#1080#1090#1077#1083#1100
+          OnClick = SpeedButtonManufacturerClick
+        end
+        object SpeedButtonCodes: TSpeedButton
+          Align = Top
+          StyledSettings = [Family, Size, Style]
+          Position.Y = 92.000000000000000000
+          Size.Width = 120.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Text = #1050#1086#1076' '#1058#1053' '#1042#1069#1044' '#1045#1040#1069#1057
+          OnClick = SpeedButtonCodesClick
+        end
+      end
+      object CertDetailedInfoBox: TGroupBox
+        Align = Client
+        StyledSettings = [Family, Size, FontColor, Other]
+        Padding.Left = 2.000000000000000000
+        Padding.Top = 20.000000000000000000
+        Padding.Right = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Size.Width = 928.000000000000000000
+        Size.Height = 746.000000000000000000
+        Size.PlatformDefault = False
+        Text = #1058#1057' RU '#1057'-CN.'#1052#1043'11.'#1042'.02303'
+        TextSettings.Font.StyleExt = {00070000000000000004000000}
+        TabOrder = 1
+        object CertDetaildInfoLabel: TLabel
+          Align = MostTop
+          StyledSettings = [Family, Size, FontColor]
+          Margins.Left = 8.000000000000000000
+          Margins.Right = 8.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 20.000000000000000000
+          Size.Width = 908.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          TextSettings.VertAlign = Leading
+          Text = 
+            #1047#1072#1103#1074#1080#1090#1077#1083#1100': '#1054#1054#1054' '#1060#1040#1042#1054#1056#1048#1058'. '#1042#1099#1076#1072#1085' 28.05.2018, '#1076#1077#1081#1089#1090#1074#1091#1077#1090' '#1076#1086' 27.05.202' +
+            '1'
+          TabOrder = 0
+        end
+        object Panel1: TPanel
+          Align = Top
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 2.000000000000000000
+          Position.X = 4.000000000000000000
+          Position.Y = 39.000000000000000000
+          Size.Width = 920.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'panelstyle'
+          TabOrder = 1
+          object EditSearch: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = MostTop
+            TabOrder = 0
+            Position.X = 2.000000000000000000
+            Position.Y = 2.000000000000000000
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Size.Width = 916.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            OnChange = EditSearchChange
+          end
+          object SpeedButtonSearch: TSpeedButton
+            Align = Client
+            Margins.Left = 2.000000000000000000
+            Margins.Top = 2.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Size.Width = 916.000000000000000000
+            Size.Height = 18.000000000000000000
+            Size.PlatformDefault = False
+            Text = #1085#1077#1090' '#1089#1086#1074#1087#1072#1076#1077#1085#1080#1081'.'
+            OnClick = SpeedButtonSearchClick
+          end
+        end
+        object WebBrowserDetailedInfo: TWebBrowser
+          Align = Client
+          Size.Width = 920.000000000000000000
+          Size.Height = 654.000000000000000000
+          Size.PlatformDefault = False
+          Margins.Left = 2.000000000000000000
+          Margins.Top = 2.000000000000000000
+          Margins.Right = 2.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+        end
+      end
+    end
+  end
+  object OpenFileDialog: TOpenDialog
+    Left = 348
+    Top = 2
+  end
+end
