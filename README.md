@@ -73,6 +73,4 @@
 Написано на: Embarcadero® Delphi 10.3 Community Edition, FireMonkey
 
 Связь с автором: [scbeast-develop@yandex.ru](mailto:scbeast-develop@yandex.ru)
-
-На бананы и плюшки с чаем: [Яндекс Деньги](https://money.yandex.ru/to/410014926236780)
 ***
