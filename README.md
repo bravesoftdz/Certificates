@@ -66,11 +66,7 @@
 * [Форумы - Fire Monkey от А до Я](http://fire-monkey.ru/)
 * [FireMonkey Modern ListView - Colorizer, Vertical\Horizontal mode, Columns and other](https://github.com/rzaripov1990/ModernListView)
 ***
-Прогру писал изначально для себя, а потом решил поделиться. 
-
-Проект оупенсорсный.
-
-Написано на: Embarcadero® Delphi 10.3 Community Edition, FireMonkey
+Embarcadero® Delphi 10.3 Community Edition, FireMonkey
 
 Связь с автором: [scbeast-develop@yandex.ru](mailto:scbeast-develop@yandex.ru)
 ***
